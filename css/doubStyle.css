@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.global-nav {
+    width: 100%;
+    height: 28px;
+}
+
+.bd {
+    width: 100%;
+    height: 28px;
+    background: #545652;
+}
+
+.bd a {
+    color: #CDD5D5;
+    font-size: 12px;
+}
+
+.global-nav-items ul {
+    position: relative;
+}
+
+.global-nav-items ul li {
+    display: inline-block;
+    /* color: #CDD5D5; */
+    color: #fff;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.global-nav-items ul li.navs {
+    width: 40px;
+    height: 25px;
+    /* border: 1px solid #000; */
+    float: left;
+    text-align: center;
+    /* line-height: 20px; */
+}
+
+.global-nav-items ul li.bg {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 45px;
+    height: 29px;
+    background: rgb(245, 139, 9);
+    opacity: 0.5;
+}
+
+.global-nav-items ul li:first-child {
+    margin-left: 10px;
+}
+
+.top-nav-info {
+    float: right;
+    margin: 0 20px 0 0;
+    line-height: 28px;
+}
+
+.top-nav-info a {
+    margin-left: 25px;
+}
+
+.top-nav-app {
+    position: relative;
+    float: right;
+    right: 10px;
+    line-height: 28px;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    background: #F0F3EF;
+}
+
+.nav-wrap {
+    width: 1024px;
+    margin: 0px auto;
+}
+
+.nav-logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.nav-search {
+    position: relative;
+    margin-top: 20px;
+    width: 520px;
+    float: left;
+    left: 30px;
+}
+
+#inputWrap .inp .text {
+    width: 471px;
+    height: 31px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px #aaa6a6;
+    outline: none;
+    padding-left: 10px;
+}
+
+#inputWrap .btn {
+    position: absolute;
+    float: left;
+    width: 50px;
+    height: 32px;
+    right: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #545652;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.secondary-nav {
+    clear: both;
+    width: 1024px;
+    margin: 0px auto;
+    /* border: 1px solid #000; */
+}
+
+.secondary-nav .nav-items ul li {
+    display: inline-block;
+    height: 50px;
+    line-height: 60px;
+    color: #555D53;
+    font-size: 14px;
+    padding-right: 25px;
+}
+
+
+/* a下划线效果 */
+
+.nav-items ul li a {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-items ul li a:before {
+    content: "";
+    position: absolute;
+    /*动画开始时在50%处，中间*/
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #545652;
+    transition: all 0.3s;
+}
+
+.nav-items ul li a:hover:before {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+hr {
+    clear: both;
+    position: relative;
+    top: 10px;
+    border: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.wrapper .content {
+    width: 1040px;
+    height: 2415px;
+    margin: 0 auto;
+}
+
+.content .article {
+    width: 675px;
+    height: 2415px;
+    float: left;
+    background: #fff;
+}
+
+.content .aside {
+    width: 300px;
+    height: 2417px;
+    float: right;
+    /* background: green; */
+}
+
+.article .wrap #swiper {
+    width: 675px;
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    /* border: 3px solid #333; */
+    overflow: hidden;
+}
+
+.popular-artists,
+.new-albums {
+    width: 675px;
+    height: 475px;
+    background: #F5F7F8;
+    margin-bottom: 30px;
+}
+
+
+/* .header li {
+    display: inline-block;
+    color: 222;
+    font-size: 17px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.header {
+    border-bottom: 2px solid #02A682
+} */
+
+
+/* .artist-items {
+    width: 135px;
+    height: 135px;
+    float: left;
+    margin: 0 20px 75px 0;
+    border: 1px solid #DFDCDC;
+    background: #fff;
+}
+
+.artist {
+    text-align: center;
+    background: #F5F7F8;
+    padding: 15px 0 0 30px;
+}
+
+.artist .cover {
+    width: 125px;
+    height: 125px;
+    margin: 5px auto;
+    /* overflow: hidden; */
+
+
+/* } */
+
+
+/* .artist .cover .photo {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('https://img1.doubanio.com/view/site/large/public/3a2c39f61bde3db.jpg');
+}
+.cover a {
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    color: #139D72;
+}
+.cover p {
+    
+    font-size: 13px;
+    color: rgb(158, 158, 158);
+} */
+
+.editor-feature {
+    width: 675px;
+    height: 471px;
+    background: #F5F7F8;
+}
+
+.editor-header {
+    border-bottom: 2px solid #02A682;
+}
+
+.editor-header h2 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #222;
+    line-height: 30px;
+    margin: 0px;
+    background: #fff;
+}
+
+.slick-featuer {
+    position: relative;
+    width: 675px;
+    height: 379px;
+}
+
+.slick-arrow {
+    position: absolute;
+    /* right: 30px; */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: none;
+    background: #80CFBB;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.slickActive {
+    background: #02A682;
+}
+
+.slick-prev {
+    top: -55px;
+    right: 35px;
+}
+
+.slick-next {
+    top: -55px;
+    right: 10px;
+}
+
+.slick-list {
+    margin: 30px auto;
+    width: 645px;
+    height: 379px;
+    overflow: hidden;
+}
+
+.slick-track {
+    width: 1300px;
+    height: 379px;
+    /* transform: translate(-645px); */
+    padding-right: 10px;
+}
+
+.slick-content {
+    margin-left: 25px;
+    float: left;
+    width: 185px;
+    height: 379px;
+    background: #fff;
+}
+
+.slick-photo {
+    margin: 10px auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/fe.png);
+}
+
+.two {
+    background-image: url(../img/fe1.png);
+}
+
+.slick-content p {
+    font-size: 13px;
+    color: #777;
+    margin: 10px 0 5px 13px;
+}
+
+.slick-content p:last-child {
+    text-align: left;
+}
+
+.slick-content h3 {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #02A682;
+}
+
+.slick-content h4 {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/*-----------------------新歌榜--------------------------------------*/
+
+#newWrapper h3 {
+    display: inline;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+#newWrapper {
+    margin-top: 30px;
+}
+
+#newWrapper div {
+    width: 675px;
+    height: 450px;
+    /* border: 1px solid #ccc; */
+    display: none;
+}
+
+#newWrapper ul {
+    border-bottom: 2px solid #139D72;
+    background: #fff;
+}
+
+#newWrapper li {
+    list-style: none;
+    display: inline;
+    font-size: 13px;
+    cursor: pointer;
+    color: #777;
+    font-weight: bold;
+}
+
+#newWrapper li::after {
+    content: '|';
+    padding: 0 2px;
+}
+
+#newWrapper .active {
+    color: rgb(9, 170, 119);
+}
+
+.new-wrap {
+    float: left;
+    width: 135px;
+    height: 135px;
+    padding: 10px 0px 60px 25px;
+}
+
+.new-wrap a {
+    color: #02A682;
+}
+
+.new-wrap p {
+    font-size: 14px;
+    color: #999;
+}
+
+
+/*--------------------------------------------------*/
+
+.banner {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.join {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+.join-block {
+    width: 95px;
+    height: 57px;
+    font-size: 13px;
+    float: left;
+    margin: 0px 2px 5px 2px;
+    background: #F5F7F8;
+}
+
+.join-block p {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.join-block h2 {
+    margin-top: 5px;
+    color: #139D72;
+}
+
+.join-btn {
+    clear: both;
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    background: #139D72;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hot-singer {
+    margin-top: 30px;
+    width: 300px;
+    height: 220px;
+    /* border: 1px solid #000; */
+}
+
+.hot-header-more {
+    float: right;
+    margin-top: -20px;
+    color: rgb(187, 186, 186);
+}
+
+.hot-table {
+    width: 300px;
+    height: 196px;
+    margin-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td,
+th {
+    width: 150px;
+    border-top: 1px solid #F8F6F6;
+    border-bottom: 1px solid #F8F6F6;
+    border-right: 1px solid #F8F6F6;
+    line-height: 35px;
+    color: #139D72;
+    padding-left: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.hotsong {
+    width: 300px;
+    height: 662px;
+    /* border: 1px solid #000; */
+}
+
+.hotsong-head {
+    width: 300px;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+}
+
+.hotsong-head span {
+    display: inline;
+}
+
+.hotsong-head a {
+    float: right;
+}
+
+.hotsong-content {
+    white-space: nowrap;
+}
+
+.hotsong-content .h-head li {
+    margin-top: 10px;
+    font-size: 14px;
+    display: inline-block;
+    color: rgb(182, 181, 181);
+}
+
+.h-content li div img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    line-height: 48px;
+    background-size: cover;
+    text-align: center;
+}
+
+.h-content li {
+    margin-top: 20px;
+}
+
+.h-content li h3 {
+    color: #02A682;
+    font-size: 15px;
+}
+
+.h-content li p {
+    color: #aaa6a6;
+    font-size: 15px;
+}
+
+.h-content li div {
+    float: left;
+}
+
+.h-content li span {
+    /* display: inline-block; */
+    float: right;
+    margin-top: -40px;
+    font-size: 30px;
+    color: #ccc;
+}
+
+#inp-list {
+    position: absolute;
+    width: 481px;
+    /* height: 200px; */
+    border: 1px solid #ccc;
+    z-index: 10;
+    background: #fff;
+    display: none;
+}
+
+
+/* 联系我们 */
+
+.call {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    z-index: 99;
+    width: 100px;
+    height: 50px;
+    background: #139D72;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s width 0.3s, 0.5s height;
+}
+
+.call span {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.call img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+.call:hover {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s width, 0.5s height 0.3s
+}

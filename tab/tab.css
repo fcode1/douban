@@ -1,0 +1,85 @@
+/* #tabWrapper {
+    width: 400px;
+    height: 100%;
+    border: 1px solid #000;
+} */
+
+#tabWrapper a {
+    text-decoration: none;
+}
+
+#tabWrapper li {
+    list-style: none;
+    display: inline-block;
+}
+
+#tabWrapper #tabs {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#tabWrapper .tabHeader {
+    font-size: 17px;
+    color: #222;
+    margin-right: 10px;
+}
+
+#tabWrapper li a {
+    color: #888;
+    font-size: 14px;
+}
+
+#tabWrapper li .activeTab {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#tabWrapper li a::after {
+    content: '|';
+    color: #222;
+    padding: 0 5px;
+}
+
+#tabWrapper #tabContent {
+    min-height: 220px;
+    padding: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#tabWrapper #tabContent .conBox {
+    display: none;
+}
+
+#tabWrapper #tabContent .conBox.current {
+    display: block;
+}
+
+
+/* tab生成样式 */
+
+#tabContent .box {
+    margin-bottom: 60px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#tabContent .box a {
+    display: inline-block;
+    color: #139D72;
+}
+
+#tabContent .box span {
+    display: block;
+    font-size: 15px;
+    color: rgb(141, 140, 140);
+}
+
+#tabContent .box a,
+span {
+    margin-top: 10px;
+}

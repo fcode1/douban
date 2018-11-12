@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input</title>
+</head>
+
+<body>
+
+    <div id="inputWrap"></div>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="jquery-input.js"></script>
+    <script>
+        $('#inputWrap').search({
+            text: '唱片名',
+            url: '',
+            type: 'GET',
+            dataType: 'jsonp',
+            sucFun: '',
+            data: '', //搜索拼接的字段
+            count: '',
+            errFun: function() {
+                console.log('error');
+            }
+        })
+    </script>
+</body>
+
+</html>

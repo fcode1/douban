@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣音乐</title>
+    <link rel="stylesheet" href="css/doubStyle.css">
+    <link rel="stylesheet" href="slider/style/slider.css">
+    <link rel="stylesheet" href="tab/tab.css">
+    <link rel="stylesheet" href="input/input.css">
+</head>
+
+<body>
+    <!-- 联系我们 -->
+    <div class="call">
+        <span>联系我们</span>
+        <img src="img/code.jpg" alt="">
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+    <div class="global-nav">
+        <div class="bd">
+            <div class="top-nav-info">
+                <a href="">登陆</a>
+                <a href="">注册</a>
+            </div>
+            <div class="top-nav-app">
+                <a href="">下载豆瓣客户端</a>
+            </div>
+            <div class="global-nav-items">
+                <ul>
+                    <li class="navs"><a>豆瓣</a></li>
+                    <li class="navs"><a>读书</a></li>
+                    <li class="navs"><a>电影</a></li>
+                    <li class="navs"><a>音乐</a></li>
+                    <li class="navs"><a>同城</a></li>
+                    <li class="navs"><a>小组</a></li>
+                    <li class="navs"><a>阅读</a></li>
+                    <li class="navs"><a>FM</a></li>
+                    <li class="navs"><a>时间</a></li>
+                    <li class="navs"><a>豆品</a></li>
+                    <li class="navs"><a>更多</a></li>
+                    <li class="bg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-wrap">
+            <div class="nav-logo">
+                <img src="img/dou.png" alt="">
+            </div>
+            <div class="nav-search">
+                <!-- <div id="inp">
+                    <input id="inp-t" type="text" placeholder="唱片名、表演者、条码、ISRC">
+                    <ul id="inp-list"></ul>
+                </div>
+                <div class="inp-btn">
+                    <img src="img/sou.png" alt="">
+                </div> -->
+                <div id="inputWrap"></div>
+                <div class="search_suggest">
+                    <ul class="search-list">
+                        <!-- <li>
+                            <a href="https://music.douban.com/subject/' + ele.id + '">
+                                <img src="' + ele.image + '" alt="">
+                                <div>
+                                    <span>' + ele.title + '</span>
+                                    <p>' + ele.author[0].name + '</p>
+                                </div>
+                            </a>
+
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color: rgb(214, 216, 213);width:100%;height:1px;" />
+        <div class="secondary-nav">
+            <div class="nav-items">
+                <ul>
+                    <li><a>音乐人</a></li>
+                    <li><a>潮潮豆瓣音乐周</a></li>
+                    <li><a>金羊毛计划</a></li>
+                    <li><a>专题</a></li>
+                    <li><a>排行榜</a></li>
+                    <li><a>音乐浏览</a></li>
+                    <li><a>乐评</a></li>
+                    <li><a>豆瓣FM</a></li>
+                    <li><a>歌单</a></li>
+                    <li><a>阿比鹿音乐奖</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="article">
+                <div class="wrap">
+                    <!--轮播插件位置-->
+                    <div class="slider" id="swiper"></div>
+                </div>
+                <div class="popular-artists" id="tabWrapper">
+                    <!-- <ul class="header">
+                        <li>本周流行音乐</li>|
+                        <li>上升最快音乐</li>
+                    </ul>
+                    <ul class="artist">
+                        <div class="artist-items">
+                            <div class="cover">
+                                <div class="photo"></div>
+                                <a class="singer">梁晓雪</a>
+                                <p class="sing-type">民谣 Folk</p>
+                            </div>
+                        </div>
+                    </ul> -->
+                </div>
+                <div class="editor-feature">
+                    <div class="editor-header">
+                        <h2>编辑推荐</h2>
+                    </div>
+                    <div class="slick-featuer">
+                        <button class="slickActive slick-prev slick-arrow">&lt;</button>
+                        <button class=" slick-next slick-arrow ">&gt;</button>
+                        <div class="slick-list ">
+                            <div class="slick-track ">
+                                <div class="slick-content ">
+                                    <a class="slick-photo "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                                <div class="slick-content ">
+                                    <a class="slick-photo "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                                <div class="slick-content ">
+                                    <a class="slick-photo "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                                <div class="slick-content ">
+                                    <a class="slick-photo two "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                                <div class="slick-content ">
+                                    <a class="slick-photo two "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                                <div class="slick-content ">
+                                    <a class="slick-photo two "></a>
+                                    <p>【歌曲】</p>
+                                    <h3>绝对纯洁</h3>
+                                    <h4>绝对纯洁</h4>
+                                    <p>终于可以在网上听到“绝对纯洁”了。前"怪力 "乐队的文隽搬到上海后组建了新的四人组，同名曲的歌词真是一首好诗。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-albums" id="newWrapper">
+                    <ul>
+                        <h3>新碟榜</h3>
+                        <li class="active">最热</li>
+                        <li>华语</li>
+                        <li>欧美</li>
+                        <li>日韩</li>
+                    </ul>
+                    <div style="display:block;">
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new1.png" alt="">
+                            <a href="">撞</a>
+                            <p>火箭少女</p>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="new-wrap">
+                            <img src="img/new2.png" alt="">
+                            <a href="">LOURA</a>
+                            <p>娄艺潇</p>
+                        </section>
+                        <section class="new-wrap">
+                            <img src="img/new2.png" alt="">
+                            <a href="">LOURA</a>
+                            <p>娄艺潇</p>
+                        </section>
+
+                    </div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="aside ">
+                <div class="banner ">
+                    <embed src="img/music.swf" width="300px;" height="250px;" type="">
+                    <!-- <img src="img/banner.png " alt=" "> -->
+
+                </div>
+                <div class="join ">
+                    <div class="join-block ">
+                        <h2>44827</h2>
+                        <p>音乐人</p>
+                    </div>
+                    <div class="join-block ">
+                        <h2>13654</h2>
+                        <p>博客</p>
+                    </div>
+                    <div class="join-block ">
+                        <h2>1122</h2>
+                        <p>厂牌</p>
+                    </div>
+                    <div class="join-btn ">
+                        <a>我要加入</a>
+                    </div>
+                </div>
+                <div class="hot-singer ">
+                    <div class="hot-header "><a>热门音乐人分类</a></div>
+                    <div class="hot-header-more "><a>更多</a></div>
+                    <div class="hot-table ">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th><a>流行</a></th>
+                                    <td>音乐</td>
+                                </tr>
+                                <tr>
+                                    <th><a>流行</a></th>
+                                    <td>音乐</td>
+                                </tr>
+                                <tr>
+                                    <th><a>流行</a></th>
+                                    <td>音乐</td>
+                                </tr>
+                                <tr>
+                                    <th><a>流行</a></th>
+                                    <td>音乐</td>
+                                </tr>
+                                <tr>
+                                    <th><a>流行</a></th>
+                                    <td>音乐</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="hotsong ">
+                    <div class="hotsong-head ">
+                        <span>本周单曲榜</span>
+                        <a><img src="img/play.png " alt=" "></a>
+                    </div>
+                    <div class="hotsong-content ">
+                        <ul class="h-head ">
+                            <li>最热</li>|
+                            <li>摇滚</li>|
+                            <li>民谣</li>|
+                            <li>流行</li>|
+                            <li>电子</li>|
+                            <li>说唱</li>|
+                        </ul>
+                        <ul class="h-content ">
+                            <li>
+                                <div><img src="img/week2.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week1.jpg" alt=" "></div>
+                                <h3>夏夜</h3>
+                                <p>里往年/1998 次播放</p>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week2.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week1.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week2.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>5</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week1.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>6</span>
+                            </li>
+                            <li>
+                                <div><img src="img/week2.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>7</span></li>
+                            <li>
+                                <div><img src="img/week1.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>8</span></li>
+                            <li>
+                                <div><img src="img/week2.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>9</span></li>
+                            <li>
+                                <div><img src="img/week1.jpg" alt=" "></div>
+                                <h3>危险游戏</h3>
+                                <p>梁晓雪/1758 次播放</p>
+                                <span>10</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.js "></script>
+    <script src="slider/js/jquery-slider.js "></script>
+    <script src="tab/jquery-tab.js "></script>
+    <script src="input/jquery-input.js"></script>
+
+    <script src="js/douban.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
